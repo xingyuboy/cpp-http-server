@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · cpp-http-server</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>About</h1>
+    <nav><a href="/">Home</a> · <a href="/about">About</a></nav>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        This page is served by the static file handler. The socket handling,
+        HTTP parsing, routing, thread pool and JSON encoding are all implemented
+        in this project rather than pulled from a framework.
+      </p>
+      <p>
+        It is a learning and portfolio project. It is not hardened for
+        internet-facing use: there is no TLS, no chunked transfer encoding and
+        no request rate limiting.
+      </p>
+      <p>Try the JSON endpoints: <code>/api/users</code>, <code>/api/health</code>,
+         <code>/api/benchmark</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

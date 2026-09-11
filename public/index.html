@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cpp-http-server</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>cpp-http-server</h1>
+    <p>An HTTP/1.1 server written from scratch in C++20.</p>
+    <nav><a href="/">Home</a> · <a href="/about">About</a> · <a href="/api/users">/api/users</a></nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Users</h2>
+      <p>Loaded live from <code>GET /api/users</code>.</p>
+      <table id="users">
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <p id="status"></p>
+    </section>
+
+    <section>
+      <h2>Add a user</h2>
+      <p>Sends <code>POST /api/users</code>.</p>
+      <div class="row">
+        <input id="name" placeholder="Name">
+        <input id="email" placeholder="Email">
+        <button id="add">Create</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
